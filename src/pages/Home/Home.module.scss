@@ -1,0 +1,15 @@
+.main {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.main-container {
+    position: relative;
+    width: 692px;
+    display: flex;
+    padding: 24px 0;
+    justify-content: space-between;
+    flex-direction: column;
+    border-bottom: 1px solid #ccc;
+}

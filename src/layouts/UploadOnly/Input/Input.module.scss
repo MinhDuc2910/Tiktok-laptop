@@ -1,0 +1,25 @@
+.caption {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.input-caption {
+    width: 100%;
+    min-height: 46px;
+    padding: 12px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.icons-end {
+    position: absolute;
+    top: 40px;
+    right: 0;
+}
+
+.icon-input {
+    width: 15px;
+    height: 15px;
+    margin-right: 16px;
+}

@@ -1,0 +1,71 @@
+.wrapper {
+    color: rgba(22, 24, 35, 0.7490196078);
+    border-top: 1px solid rgba(22, 24, 35, 0.12);
+    padding: 16px 0;
+    overflow-y: auto;
+}
+
+.label {
+    margin-bottom: 8px;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 600;
+}
+
+.container {
+    display: flex;
+    text-align: center;
+    padding: 8px;
+
+    &:hover {
+        background-color: rgba(22, 24, 35, 0.03);
+        cursor: pointer;
+    }
+}
+
+.avatar {
+    width: 3.2rem;
+    height: 3.2rem;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 8px;
+}
+
+.box {
+    text-align: start;
+}
+
+.nick-name {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    margin-top: -2px;
+    max-width: 260px;
+    color: #161823;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.check {
+    margin-left: 6px;
+    color: rgb(32, 213, 236);
+}
+
+.name {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    max-width: 260px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.see {
+    font-weight: 600;
+    font-size: 1.4rem;
+    line-height: 20px;
+    color: var(--primary);
+    cursor: pointer;
+}

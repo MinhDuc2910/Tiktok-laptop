@@ -1,0 +1,91 @@
+.wrapper {
+    border-bottom: 1px solid rgba(22, 24, 35, 0.2);
+}
+
+.main-box {
+    width: 100%;
+    display: flex;
+    padding: 20px 0;
+}
+
+.box-image {
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.image {
+    border-radius: 50%;
+    width: 56px;
+    height: 56px;
+    object-fit: cover;
+}
+
+.content {
+    position: relative;
+}
+
+.title {
+    display: flex;
+    max-width: 500px;
+}
+
+.author-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    cursor: pointer;
+    margin-right: 4px;
+}
+
+.author-name {
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+.span-text {
+    font-size: 1.6rem;
+    font-weight: 400;
+    margin-right: 4px;
+}
+
+.strong-text {
+    font-size: 1.6rem;
+    cursor: pointer;
+}
+
+.video-container {
+    width: 624px;
+    height: calc(450px + (100vw - 768px) / 1152 * 100);
+    margin-top: 20px;
+}
+
+.video-box {
+    max-width: 277px;
+    height: calc(450px + (100vw - 768px) / 1152 * 100);
+}
+.video {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    box-sizing: border-box;
+    background: #eee center no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    cursor: pointer;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-right: 20px;
+}
+
+.video-btn {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    object-fit: cover;
+}
+
+.button {
+    position: absolute;
+    top: 7px;
+    right: -5px;
+}

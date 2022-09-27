@@ -1,0 +1,70 @@
+.wrapper {
+    width: 320px;
+    color: rgba(22, 24, 35, 0.7490196078);
+}
+
+.container {
+    padding: 20px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 12px;
+}
+
+.avatar {
+    width: 4.4rem;
+    height: 4.4rem;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 8px;
+}
+
+.box {
+}
+
+.nick-name {
+    font-size: 1.8rem;
+    color: var(--text-color);
+    font-family: SofiaPro, Arial, Tahoma, PingFangSC, sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.check {
+    margin-left: 6px;
+    color: rgb(32, 213, 236);
+}
+
+.name {
+    color: var(--text-color);
+    font-family: ProximaNova, Arial, Tahoma, PingFangSC, sans-serif;
+    font-size: 1.4rem;
+    line-height: 20px;
+}
+
+.box-end {
+    display: flex;
+    margin-top: 8px;
+}
+
+.span {
+    padding-right: 20px;
+}
+
+.count {
+    font-weight: 700;
+    margin-right: 6px;
+    font-size: 1.7rem;
+    line-height: 20px;
+    color: var(--text-color);
+}
+
+.text-end {
+    color: var();
+    font-size: 17px;
+    line-height: 20px;
+    display: inline-block;
+}

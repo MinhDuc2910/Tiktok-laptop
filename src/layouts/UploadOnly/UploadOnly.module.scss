@@ -1,0 +1,125 @@
+:root {
+    --color: rgba(22, 24, 35, 0.5);
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+
+    background-color: rgb(248, 248, 248);
+}
+
+.width-header {
+    width: 100%;
+    height: 100%;
+    padding: 0 var(--default-layout-padding);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.layout {
+    width: 1110px;
+
+    padding: 16px 0;
+    margin-top: var(--default-layout-header-height);
+}
+
+.container {
+    padding: 24px 56px;
+    height: 900px;
+}
+
+.text-header {
+}
+
+.text1 {
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 3.6rem;
+}
+
+.text2 {
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 2.7rem;
+    color: var(--color);
+}
+
+.content {
+    margin: 24px 0 130px 0;
+    display: flex;
+}
+
+.sidebar {
+    min-width: 260px;
+    height: 458px;
+    border-radius: 8px;
+    margin-top: 25px;
+    border: 2px dashed rgba(22, 24, 35, 0.2);
+    display: flex;
+    text-align: center;
+    justify-content: center;
+
+    &:hover {
+        border: 2px dashed red;
+    }
+}
+
+.upload-stage {
+    border-radius: 8px;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+    padding-left: 35px;
+    padding-right: 35px;
+}
+
+.icon {
+    width: 40px;
+    height: 29px;
+    color: rgba(84, 84, 84, 0.92);
+}
+
+.select {
+    font-size: 1.8rem;
+}
+
+.select-1 {
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: rgba(22, 24, 35, 0.9);
+    margin-bottom: 20px;
+}
+
+.tab {
+    margin-top: 10px;
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: var(--color);
+}
+
+.button {
+    width: 100%;
+    margin-top: 30px;
+}
+
+// Form.............
+.form {
+    width: 100%;
+    margin-left: 24px;
+}
+
+.input-cover {
+    height: 168px;
+    width: 100%;
+    min-height: 46px;
+    padding: 12px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
