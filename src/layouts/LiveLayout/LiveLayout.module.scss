@@ -20,19 +20,20 @@
     width: 100%;
     max-width: 100%;
     display: flex;
-    padding-left: 10px;
     margin-top: var(--default-layout-header-height);
 }
 
 .width-sidebar {
-    width: 226px;
-    overflow-y: auto;
+    width: var(--layout-width-sidebar);
     max-height: 100vh;
-    position: fixed;
+    padding: 0 5px 0 var(--default-layout-padding);
+
+    &:hover {
+        overflow-y: auto;
+    }
 }
 
 .layout-live {
-    margin-left: 226px;
     width: 1252px;
 }
 

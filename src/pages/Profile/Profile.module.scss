@@ -1,4 +1,147 @@
 .wrapper {
-    background-color: aqua;
-    height: 1000px;
+}
+.width-header {
+    width: 100%;
+    height: 100%;
+    padding: 0 var(--default-layout-padding);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container {
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    padding-left: 10px;
+    margin-top: var(--default-layout-header-height);
+}
+
+.width-sidebar {
+    width: var(--layout-width-sidebar);
+    max-height: 100vh;
+    padding: 0 var(--default-layout-padding);
+
+    &:hover {
+        overflow-y: auto;
+    }
+}
+
+.profile-container {
+    padding: 32px 24px;
+}
+
+.information-profile {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.box-profile {
+    display: flex;
+    flex-direction: row;
+}
+
+.box-avatar {
+    width: 116px;
+    height: 116px;
+}
+
+.avatar {
+    width: 116px;
+    height: 116px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.box-imformation {
+    width: 100%;
+    margin-left: 20px;
+}
+
+.box-title {
+}
+
+.nickname {
+    font-family: SofiaPro, Arial, Tahoma, PingFangSC, sans-serif;
+    font-weight: 700;
+    font-size: 3.2rem;
+    line-height: 3.8rem;
+    padding-bottom: 4px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: left;
+}
+
+.full-name {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    text-overflow: ellipsis;
+    height: 25px;
+    overflow: hidden;
+    max-width: 450px;
+    white-space: nowrap;
+    display: flex;
+    align-items: flex-end;
+}
+
+.box-button {
+    position: relative;
+    width: 208px;
+    height: 36px;
+    padding: 0px;
+    margin: 16px 0px 0px;
+}
+
+.button-btn {
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.count-infos {
+    display: flex;
+    margin-top: 20px;
+}
+
+.box-parameter {
+    margin-right: 15px;
+}
+
+.number {
+    font-family: SofiaPro, Arial, Tahoma, PingFangSC, sans-serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 25px;
+}
+
+.text {
+    color: rgba(22, 24, 35, 0.75);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    display: inline-block;
+    margin-left: 6px;
+}
+
+.contact-info {
+    text-align: left;
+    color: rgb(22, 24, 35);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    white-space: pre-line;
+    margin-top: 10px;
+}
+
+.box-icons {
+    display: flex;
+    position: absolute;
+    top: 10px;
+    cursor: pointer;
+    left: 156%;
+}
+
+.share-icon {
+    margin-right: 15px;
 }

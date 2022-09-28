@@ -55,6 +55,11 @@ function Search() {
         setShowResult(false);
     };
 
+    function handleOnClickItem() {
+        setShowResult(false);
+        setSearchValue('');
+    }
+
     return (
         <Tippy
             interactive
@@ -65,7 +70,7 @@ function Search() {
                     <PopperWrapper>
                         <h4 className={cx('search-title')}>Accounts</h4>
                         {searchResult.map((result) => (
-                            <AccountItem key={result.id} data={result} />
+                            <AccountItem key={result.id} data={result} onClick={handleOnClickItem} />
                         ))}
                     </PopperWrapper>
                 </div>
@@ -79,7 +84,7 @@ function Search() {
                     placeholder="Search accounts and videos"
                     spellCheck={false}
                     onChange={handleSearch}
-                    onFocus={() => {
+                    onClick={() => {
                         setShowResult(true);
                         if (!searchValue) {
                             setSearchResult([]);

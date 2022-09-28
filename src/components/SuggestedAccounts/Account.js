@@ -5,7 +5,7 @@ import classNames from 'classnames/bind';
 import styles from './Account.module.scss';
 import AccountItemSidebar from './AccountItemSidebar';
 import { useEffect } from 'react';
-import Users from '~/FakeApi/Users';
+import * as request from '~/utils/httpRequest';
 
 const cx = classNames.bind(styles);
 
@@ -15,8 +15,8 @@ function Account({ label, see }) {
     useEffect(() => {
         const fetchApi = async () => {
             try {
-                const response = await Users.GetAll();
-                setAccountItem(response[0].data);
+                const res = await request.get('users/search?q=đ&type=less');
+                setAccountItem(res.data);
             } catch (error) {
                 console.log('Failed to fetch users:', error);
             }

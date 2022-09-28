@@ -216,7 +216,7 @@ function Header({ className }) {
                 </Link>
                 <Search />
                 <div className={cx('actions')}>
-                    <Button upload leftIcon={<FontAwesomeIcon icon={faPlus} />} to="/upload">
+                    <Button  upload leftIcon={<FontAwesomeIcon icon={faPlus} />} to="/upload">
                         Upload
                     </Button>
                     {currentUser ? (

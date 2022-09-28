@@ -1,7 +1,11 @@
 .wrapper {
     width: var(--default-layout-width-sidebar);
-    overflow-y: auto;
+    overflow-y: none;
     max-height: 100vh;
     position: fixed;
     background-color: white;
+
+    &:hover {
+        overflow-y: auto;
+    }
 }

@@ -14,8 +14,8 @@ import Live from '~/pages/Live';
 const publicRoutes = [
     { path: config.routes.home, component: Home },
     { path: config.routes.following, component: Following },
-    { path: config.routes.profile, component: Profile },
-    { path: config.routes.live, component: Live, layout: LiveLayout },
+    { path: config.routes.profile, layout: Profile },
+    { path: config.routes.live, layout: LiveLayout },
     { path: config.routes.upload, component: Upload, layout: UploadOnly },
     { path: config.routes.search, component: Search, layout: null },
 ];

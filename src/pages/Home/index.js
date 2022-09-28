@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react';
 
 import styles from './Home.module.scss';
 import MainBox from '../../components/MainBox/MainBox';
-import Users from '~/FakeApi/Users';
+import * as request from '~/utils/httpRequest';
 
 const cx = classNames.bind(styles);
 
@@ -13,8 +13,8 @@ function Home() {
     useEffect(() => {
         const fetchApi = async () => {
             try {
-                const response = await Users.GetAll();
-                setAccountItem(response[0].data);
+                const response = await request.get('users/search?q=l&type=more');
+                setAccountItem(response.data);
             } catch (error) {
                 console.log('Failed to fetch users:', error);
             }

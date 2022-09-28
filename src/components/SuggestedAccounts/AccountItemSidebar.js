@@ -7,6 +7,7 @@ import Tippy from '@tippyjs/react/headless';
 import styles from './Account.module.scss';
 import { Wrapper as PopperWrapper } from '~/components/Popper';
 import AccountPrevew from './AccountPrevew';
+import { Link } from 'react-router-dom';
 
 const cx = classNames.bind(styles);
 
@@ -26,17 +27,19 @@ function AccountItemSidebar({ data }) {
                     </div>
                 )}
             >
-                <div className={cx('container')}>
-                    <img className={cx('avatar')} src={data.avatar} alt="" />
+                <Link to={`/@${data.nickname}`}>
+                    <div className={cx('container')}>
+                        <img className={cx('avatar')} src={data.avatar} alt="" />
 
-                    <div className={cx('box')}>
-                        <h4 className={cx('nick-name')}>
-                            {data.nickname}
-                            {data.tick && <FontAwesomeIcon className={cx('check')} icon={faCheckCircle} />}
-                        </h4>
-                        <p className={cx('name')}>{data.full_name}</p>
+                        <div className={cx('box')}>
+                            <h4 className={cx('nick-name')}>
+                                {data.nickname}
+                                {data.tick && <FontAwesomeIcon className={cx('check')} icon={faCheckCircle} />}
+                            </h4>
+                            <p className={cx('name')}>{data.full_name}</p>
+                        </div>
                     </div>
-                </div>
+                </Link>
             </Tippy>
         </div>
     );
